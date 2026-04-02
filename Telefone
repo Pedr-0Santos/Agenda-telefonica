@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Telefone {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		cliente c = new cliente();
+		
+		System.out.println("Nome: ");
+		c.setNome(scanner.nextLine());
+		
+		System.out.println("CPF: ");
+		c.setCpf(scanner.nextLine());
+		
+		System.out.println("Email: ");
+		c.setEmail(scanner.nextLine());
+		
+		System.out.println("CEP: ");
+		c.setCep(scanner.nextLine());
+		
+		System.out.println("Aguarde o atendimento da operadora....");
+         scanner.nextLine();
+         
+         scanner.close();
+}
+}
